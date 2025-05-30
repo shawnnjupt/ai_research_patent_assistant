@@ -1,0 +1,102 @@
+{
+  "date": "2025-04-28",
+  "chosen": [
+    {
+      "title": "A Dynamic Fuzzy Rule and Attribute Management Framework for Fuzzy Inference Systems in High-Dimensional Data",
+      "abstract": "This paper presents an Adaptive Dynamic Attribute and Rule (ADAR) framework designed to address the challenges posed by high-dimensional data in neuro-fuzzy inference systems. By integrating dual weighting mechanisms-assigning adaptive importance to both attributes and rules-together with automated growth and pruning strategies, ADAR adaptively streamlines complex fuzzy models without sacrificing performance or interpretability. Experimental evaluations on four diverse datasets - Auto MPG (7 variables), Beijing PM2.5 (10 variables), Boston Housing (13 variables), and Appliances Energy Consumption (27 variables) show that ADAR-based models achieve consistently lower Root Mean Square Error (RMSE) compared to state-of-the-art baselines. On the Beijing PM2.5 dataset, for instance, ADAR-SOFENN attained an RMSE of 56.87 with nine rules, surpassing traditional ANFIS [12] and SOFENN [16] models. Similarly, on the high-dimensional Appliances Energy dataset, ADAR-ANFIS reached an RMSE of 83.25 with nine rules, outperforming established fuzzy logic approaches and interpretability-focused methods such as APLR. Ablation studies further reveal that combining rule-level and attribute-level weight assignment significantly reduces model overlap while preserving essential features, thereby enhancing explainability. These results highlight ADAR's effectiveness in dynamically balancing rule complexity and feature importance, paving the way for scalable, high-accuracy, and transparent neuro-fuzzy systems applicable to a range of real-world scenarios.",
+      "url": "https://arxiv.org/abs/2504.19148",
+      "categories": [
+        "cs.AI"
+      ],
+      "authors": "Ke Liu,Jing Ma,Edmund M-K Lai",
+      "first_submitted_date": "2025-04-27",
+      "first_announced_date": "2025-04-28",
+      "comments": "No comments",
+      "reason": "-"
+    },
+    {
+      "title": "BQSched: A Non-intrusive Scheduler for Batch Concurrent Queries via Reinforcement Learning",
+      "abstract": "Most large enterprises build predefined data pipelines and execute them periodically to process operational data using SQL queries for various tasks. A key issue in minimizing the overall makespan of these pipelines is the efficient scheduling of concurrent queries within the pipelines. Existing tools mainly rely on simple heuristic rules due to the difficulty of expressing the complex features and mutual influences of queries. The latest reinforcement learning (RL) based methods have the potential to capture these patterns from feedback, but it is non-trivial to apply them directly due to the large scheduling space, high sampling cost, and poor sample utilization. Motivated by these challenges, we propose BQSched, a non-intrusive Scheduler for Batch concurrent Queries via reinforcement learning. Specifically, BQSched designs an attention-based state representation to capture the complex query patterns, and proposes IQ-PPO, an auxiliary task-enhanced proximal policy optimization (PPO) algorithm, to fully exploit the rich signals of Individual Query completion in logs. Based on the RL framework above, BQSched further introduces three optimization strategies, including adaptive masking to prune the action space, scheduling gain-based query clustering to deal with large query sets, and an incremental simulator to reduce sampling cost. To our knowledge, BQSched is the first non-intrusive batch query scheduler via RL. Extensive experiments show that BQSched can significantly improve the efficiency and stability of batch query scheduling, while also achieving remarkable scalability and adaptability in both data and queries. For example, across all DBMSs and scales tested, BQSched reduces the overall makespan of batch queries on TPC-DS benchmark by an average of 34% and 13%, compared with the commonly used heuristic strategy and the adapted RL-based scheduler, respectively.",
+      "url": "https://arxiv.org/abs/2504.19142",
+      "categories": [
+        "cs.DB",
+        "cs.AI"
+      ],
+      "authors": "Chenhao Xu,Chunyu Chen,Jinglin Peng,Jiannan Wang,Jun Gao",
+      "first_submitted_date": "2025-04-27",
+      "first_announced_date": "2025-04-28",
+      "comments": "Accepted by ICDE '25",
+      "reason": "-"
+    },
+    {
+      "title": "Understanding the Skill Gap in Recurrent Language Models: The Role of the Gather-and-Aggregate Mechanism",
+      "abstract": "SSMs offer efficient processing of long sequences with fixed state sizes, but struggle with algorithmic tasks like retrieving past context. In this work, we examine how such in-context retrieval operates within Transformer- and SSM-based language models. We find that both architectures develop the same fundamental Gather-and-Aggregate (G&A) mechanism. A Gather Head first identifies and extracts relevant information from the context, which an Aggregate Head then integrates into a final representation. Across both model types, G&A concentrates in just a few heads, making them critical bottlenecks even for benchmarks that require a basic form of retrieval. For example, disabling a single Gather or Aggregate Head of a pruned Llama-3.1-8B degrades its ability to retrieve the correct answer letter in MMLU, reducing accuracy from 66% to 25%. This finding suggests that in-context retrieval can obscure the limited knowledge demands of certain tasks. Despite strong MMLU performance with retrieval intact, the pruned model fails on other knowledge tests. Similar G&A dependencies exist in GSM8K, BBH, and dialogue tasks. Given the significance of G&A in performance, we show that retrieval challenges in SSMs manifest in how they implement G&A, leading to smoother attention patterns rather than the sharp token transitions that effective G&A relies on. Thus, while a gap exists between Transformers and SSMs in implementing in-context retrieval, it is confined to a few heads, not the entire model. This insight suggests a unified explanation for performance differences between Transformers and SSMs while also highlighting ways to combine their strengths. For example, in pretrained hybrid models, attention components naturally take on the role of Aggregate Heads. Similarly, in a pretrained pure SSM, replacing a single G&A head with an attention-based variant significantly improves retrieval.",
+      "url": "https://arxiv.org/abs/2504.18574",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "authors": "Aviv Bick,Eric Xing,Albert Gu",
+      "first_submitted_date": "2025-04-22",
+      "first_announced_date": "2025-04-28",
+      "comments": "No comments",
+      "reason": "-"
+    },
+    {
+      "title": "PHEATPRUNER: Interpretable Data-centric Feature Selection for Multivariate Time Series Classification through Persistent Homology",
+      "abstract": "Balancing performance and interpretability in multivariate time series classification is a significant challenge due to data complexity and high dimensionality. This paper introduces PHeatPruner, a method integrating persistent homology and sheaf theory to address these challenges. Persistent homology facilitates the pruning of up to 45% of the applied variables while maintaining or enhancing the accuracy of models such as Random Forest, CatBoost, XGBoost, and LightGBM, all without depending on posterior probabilities or supervised optimization algorithms. Concurrently, sheaf theory contributes explanatory vectors that provide deeper insights into the data's structural nuances. The approach was validated using the UEA Archive and a mastitis detection dataset for dairy cows. The results demonstrate that PHeatPruner effectively preserves model accuracy. Furthermore, our results highlight PHeatPruner's key features, i.e. simplifying complex data and offering actionable insights without increasing processing time or complexity. This method bridges the gap between complexity reduction and interpretability, suggesting promising applications in various fields.",
+      "url": "https://arxiv.org/abs/2504.18329",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "authors": "Anh-Duy Pham,Olivier Basole Kashongwe,Martin Atzmueller,Tim Römer",
+      "first_submitted_date": "2025-04-25",
+      "first_announced_date": "2025-04-28",
+      "comments": "Preprint",
+      "reason": "-"
+    },
+    {
+      "title": "Task-Oriented Communications for Visual Navigation with Edge-Aerial Collaboration in Low Altitude Economy",
+      "abstract": "To support the Low Altitude Economy (LAE), it is essential to achieve precise localization of unmanned aerial vehicles (UAVs) in urban areas where global positioning system (GPS) signals are unavailable. Vision-based methods offer a viable alternative but face severe bandwidth, memory and processing constraints on lightweight UAVs. Inspired by mammalian spatial cognition, we propose a task-oriented communication framework, where UAVs equipped with multi-camera systems extract compact multi-view features and offload localization tasks to edge servers. We introduce the Orthogonally-constrained Variational Information Bottleneck encoder (O-VIB), which incorporates automatic relevance determination (ARD) to prune non-informative features while enforcing orthogonality to minimize redundancy. This enables efficient and accurate localization with minimal transmission cost. Extensive evaluation on a dedicated LAE UAV dataset shows that O-VIB achieves high-precision localization under stringent bandwidth budgets. Code and dataset will be made publicly available at: github.com/fangzr/TOC-Edge-Aerial.",
+      "url": "https://arxiv.org/abs/2504.18317",
+      "categories": [
+        "cs.CV",
+        "cs.NI"
+      ],
+      "authors": "Zhengru Fang,Zhenghao Liu,Jingjing Wang,Senkang Hu,Yu Guo,Yiqin Deng,Yuguang Fang",
+      "first_submitted_date": "2025-04-25",
+      "first_announced_date": "2025-04-28",
+      "comments": "Code and dataset will be made publicly available: https://github.com/fangzr/TOC-Edge-Aerial",
+      "reason": "-"
+    },
+    {
+      "title": "Study on Real-Time Road Surface Reconstruction Using Stereo Vision",
+      "abstract": "Road surface reconstruction plays a crucial role in autonomous driving, providing essential information for safe and smooth navigation. This paper enhances the RoadBEV [1] framework for real-time inference on edge devices by optimizing both efficiency and accuracy. To achieve this, we proposed to apply Isomorphic Global Structured Pruning to the stereo feature extraction backbone, reducing network complexity while maintaining performance. Additionally, the head network is redesigned with an optimized hourglass structure, dynamic attention heads, reduced feature channels, mixed precision inference, and efficient probability volume computation. Our approach improves inference speed while achieving lower reconstruction error, making it well-suited for real-time road surface reconstruction in autonomous driving.",
+      "url": "https://arxiv.org/abs/2504.18112",
+      "categories": [
+        "cs.CV"
+      ],
+      "authors": "Deepak Ghimire,Byoungjun Kim,Donghoon Kim,SungHwan Jeong",
+      "first_submitted_date": "2025-04-25",
+      "first_announced_date": "2025-04-28",
+      "comments": "Stereo Vision, Efficient CNN,Pruning, Optimization. 2025 Intelligent Information and Control Conference (IICC 2025), Jeonju, Korea",
+      "reason": "-"
+    }
+  ],
+  "filtered": [
+    {
+      "title": "Think, Prune, Train, Improve: Scaling Reasoning without Scaling Models",
+      "abstract": "Large language models (LLMs) have demonstrated strong capabilities in programming and mathematical reasoning tasks, but are constrained by limited high-quality training data. Synthetic data can be leveraged to enhance fine-tuning outcomes, but several factors influence this process, including model size, synthetic data volume, pruning strategy, and number of fine-tuning rounds. We explore these axes and investigate which conditions enable model self-improvement. We introduce the Think, Prune, Train process, a scalable framework that iteratively fine-tunes models on their own reasoning traces, using ground-truth pruning to ensure high-quality training data. This approach yields improved performance: on GSM8K, Gemma2-2B achieves a Pass@1 of 57.6% (from 41.9%), Gemma2-9B reaches 82%, matching LLaMA-3.1-70B, and LLaMA-3.1-70B attains 91%, even surpassing GPT-4o, demonstrating the effectiveness of self-generated reasoning and systematic data selection for improving LLM capabilities.",
+      "url": "https://arxiv.org/abs/2504.18116",
+      "categories": [
+        "cs.LG"
+      ],
+      "authors": "Caia Costello,Simon Guo,Anna Goldie,Azalia Mirhoseini",
+      "first_submitted_date": "2025-04-25",
+      "first_announced_date": "2025-04-28",
+      "comments": "No comments",
+      "reason": "none of cs.LG in whitelist"
+    }
+  ]
+}

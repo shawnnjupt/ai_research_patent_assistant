@@ -1,0 +1,78 @@
+{
+  "date": "2025-04-25",
+  "chosen": [
+    {
+      "title": "Back to Fundamentals: Low-Level Visual Features Guided Progressive Token Pruning",
+      "abstract": "Vision Transformers (ViTs) excel in semantic segmentation but demand significant computation, posing challenges for deployment on resource-constrained devices. Existing token pruning methods often overlook fundamental visual data characteristics. This study introduces 'LVTP', a progressive token pruning framework guided by multi-scale Tsallis entropy and low-level visual features with twice clustering. It integrates high-level semantics and basic visual attributes for precise segmentation. A novel dynamic scoring mechanism using multi-scale Tsallis entropy weighting overcomes limitations of traditional single-parameter entropy. The framework also incorporates low-level feature analysis to preserve critical edge information while optimizing computational cost. As a plug-and-play module, it requires no architectural changes or additional training. Evaluations across multiple datasets show 20%-45% computational reductions with negligible performance loss, outperforming existing methods in balancing cost and accuracy, especially in complex edge regions.",
+      "url": "https://arxiv.org/abs/2504.17996",
+      "categories": [
+        "cs.CV"
+      ],
+      "authors": "Yuanbing Ouyang,Yizhuo Liang,Qingpeng Li,Xinfei Guo,Yiming Luo,Di Wu,Hao Wang,Yushan Pan",
+      "first_submitted_date": "2025-04-24",
+      "first_announced_date": "2025-04-25",
+      "comments": "No comments",
+      "reason": "-"
+    },
+    {
+      "title": "Collaborative Multi-Agent Reinforcement Learning for Automated Feature Transformation with Graph-Driven Path Optimization",
+      "abstract": "Feature transformation methods aim to find an optimal mathematical feature-feature crossing process that generates high-value features and improves the performance of downstream machine learning tasks. Existing frameworks, though designed to mitigate manual costs, often treat feature transformations as isolated operations, ignoring dynamic dependencies between transformation steps. To address the limitations, we propose TCTO, a collaborative multi-agent reinforcement learning framework that automates feature engineering through graph-driven path optimization. The framework's core innovation lies in an evolving interaction graph that models features as nodes and transformations as edges. Through graph pruning and backtracking, it dynamically eliminates low-impact edges, reduces redundant operations, and enhances exploration stability. This graph also provides full traceability to empower TCTO to reuse high-utility subgraphs from historical transformations. To demonstrate the efficacy and adaptability of our approach, we conduct comprehensive experiments and case studies, which show superior performance across a range of datasets.",
+      "url": "https://arxiv.org/abs/2504.17355",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "authors": "Xiaohan Huang,Dongjie Wang,Zhiyuan Ning,Ziyue Qiao,Qingqing Long,Haowei Zhu,Yi Du,Min Wu,Yuanchun Zhou,Meng Xiao",
+      "first_submitted_date": "2025-04-24",
+      "first_announced_date": "2025-04-25",
+      "comments": "13 pages, Keywords: Automated Feature Transformation, Tabular Dataset, Reinforcement Learning",
+      "reason": "-"
+    }
+  ],
+  "filtered": [
+    {
+      "title": "Efficient Tree Generation for Globally Optimal Decisions under Probabilistic Outcomes",
+      "abstract": "Many real-world problems require making sequences of decisions where the outcomes of each decision are probabilistic and uncertain, and the availability of different actions is constrained by the outcomes of previous actions. There is a need to generate policies that are adaptive to uncertainty, globally optimal, and yet scalable as the state space grows. In this paper, we propose the generation of optimal decision trees, which dictate which actions should be implemented in different outcome scenarios, while maximizing the expected reward of the strategy. Using a combination of dynamic programming and mixed-integer linear optimization, the proposed methods scale to problems with large but finite state spaces, using problem-specific information to prune away large subsets of the state space that do not yield progress towards rewards. We demonstrate that the presented approach is able to find the globally optimal decision tree in linear time with respect to the number states explored.",
+      "url": "https://arxiv.org/abs/2504.17983",
+      "categories": [
+        "math.OC",
+        "cs.DS"
+      ],
+      "authors": "Berk Ozturk,She'ifa Punla-Green,Les Servi",
+      "first_submitted_date": "2025-04-24",
+      "first_announced_date": "2025-04-25",
+      "comments": ":90C39",
+      "reason": "none of math.OC,cs.DS in whitelist"
+    },
+    {
+      "title": "Communication-Efficient Personalized Distributed Learning with Data and Node Heterogeneity",
+      "abstract": "To jointly tackle the challenges of data and node heterogeneity in decentralized learning, we propose a distributed strong lottery ticket hypothesis (DSLTH), based on which a communication-efficient personalized learning algorithm is developed. In the proposed method, each local model is represented as the Hadamard product of global real-valued parameters and a personalized binary mask for pruning. The local model is learned by updating and fusing the personalized binary masks while the real-valued parameters are fixed among different agents. To further reduce the complexity of hardware implementation, we incorporate a group sparse regularization term in the loss function, enabling the learned local model to achieve structured sparsity. Then, a binary mask aggregation algorithm is designed by introducing an intermediate aggregation tensor and adding a personalized fine-tuning step in each iteration, which constrains model updates towards the local data distribution. The proposed method effectively leverages the relativity among agents while meeting personalized requirements in heterogeneous node conditions. We also provide a theoretical proof for the DSLTH, establishing it as the foundation of the proposed method. Numerical simulations confirm the validity of the DSLTH and demonstrate the effectiveness of the proposed algorithm.",
+      "url": "https://arxiv.org/abs/2504.17520",
+      "categories": [
+        "cs.LG",
+        "cs.DC",
+        "cs.MA"
+      ],
+      "authors": "Zhuojun Tian,Zhaoyang Zhang,Yiwei Li,Mehdi Bennis",
+      "first_submitted_date": "2025-04-24",
+      "first_announced_date": "2025-04-25",
+      "comments": "Accepcted by TCCN",
+      "reason": "none of cs.LG,cs.MA,cs.DC in whitelist"
+    },
+    {
+      "title": "Coding for Computation: Efficient Compression of Neural Networks for Reconfigurable Hardware",
+      "abstract": "As state of the art neural networks (NNs) continue to grow in size, their resource-efficient implementation becomes ever more important. In this paper, we introduce a compression scheme that reduces the number of computations required for NN inference on reconfigurable hardware such as FPGAs. This is achieved by combining pruning via regularized training, weight sharing and linear computation coding (LCC). Contrary to common NN compression techniques, where the objective is to reduce the memory used for storing the weights of the NNs, our approach is optimized to reduce the number of additions required for inference in a hardware-friendly manner. The proposed scheme achieves competitive performance for simple multilayer perceptrons, as well as for large scale deep NNs such as ResNet-34.",
+      "url": "https://arxiv.org/abs/2504.17403",
+      "categories": [
+        "cs.LG",
+        "cs.IT",
+        "eess.SP"
+      ],
+      "authors": "Hans Rosenberger,Rodrigo Fischer,Johanna S. Fröhlich,Ali Bereyhi,Ralf R. Müller",
+      "first_submitted_date": "2025-04-24",
+      "first_announced_date": "2025-04-25",
+      "comments": "Accepted at the 2025 IEEE Statistical Signal Processing (SSP) Workshop, Edinburgh",
+      "reason": "none of cs.LG,eess.SP,cs.IT in whitelist"
+    }
+  ]
+}

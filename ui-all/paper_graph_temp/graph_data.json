@@ -1,0 +1,366 @@
+{
+  "nodes": [
+    {
+      "id": "大型语言模型（LLMs）",
+      "group": 1
+    },
+    {
+      "id": "大型语言模型",
+      "group": 2
+    },
+    {
+      "id": "大型语言模型（LLM）",
+      "group": 4
+    },
+    {
+      "id": "基准测试",
+      "group": 4
+    },
+    {
+      "id": "数据集",
+      "group": 4
+    },
+    {
+      "id": "微调",
+      "group": 1
+    },
+    {
+      "id": "GPT-4o",
+      "group": 2
+    },
+    {
+      "id": "自然语言处理",
+      "group": 1
+    },
+    {
+      "id": "检索增强生成（RAG）",
+      "group": 4
+    },
+    {
+      "id": "GPT-4",
+      "group": 1
+    },
+    {
+      "id": "大型语言模型 (LLMs)",
+      "group": 1
+    },
+    {
+      "id": "强化学习",
+      "group": 4
+    },
+    {
+      "id": "代码生成",
+      "group": 4
+    },
+    {
+      "id": "推理能力",
+      "group": 4
+    },
+    {
+      "id": "计算开销",
+      "group": 3
+    }
+  ],
+  "links": [
+    {
+      "source": "GPT-4",
+      "target": "代码生成",
+      "value": 2
+    },
+    {
+      "source": "基准测试",
+      "target": "大型语言模型（LLMs）",
+      "value": 4
+    },
+    {
+      "source": "基准测试",
+      "target": "数据集",
+      "value": 8
+    },
+    {
+      "source": "大型语言模型（LLMs）",
+      "target": "数据集",
+      "value": 8
+    },
+    {
+      "source": "大型语言模型（LLMs）",
+      "target": "计算开销",
+      "value": 10
+    },
+    {
+      "source": "基准测试",
+      "target": "大型语言模型 (LLMs)",
+      "value": 4
+    },
+    {
+      "source": "代码生成",
+      "target": "大型语言模型（LLM）",
+      "value": 8
+    },
+    {
+      "source": "大型语言模型（LLMs）",
+      "target": "微调",
+      "value": 4
+    },
+    {
+      "source": "微调",
+      "target": "计算开销",
+      "value": 8
+    },
+    {
+      "source": "代码生成",
+      "target": "大型语言模型（LLMs）",
+      "value": 2
+    },
+    {
+      "source": "大型语言模型（LLMs）",
+      "target": "检索增强生成（RAG）",
+      "value": 7
+    },
+    {
+      "source": "数据集",
+      "target": "自然语言处理",
+      "value": 3
+    },
+    {
+      "source": "大型语言模型",
+      "target": "强化学习",
+      "value": 10
+    },
+    {
+      "source": "大型语言模型",
+      "target": "计算开销",
+      "value": 6
+    },
+    {
+      "source": "强化学习",
+      "target": "计算开销",
+      "value": 1
+    },
+    {
+      "source": "GPT-4",
+      "target": "大型语言模型（LLM）",
+      "value": 5
+    },
+    {
+      "source": "基准测试",
+      "target": "自然语言处理",
+      "value": 6
+    },
+    {
+      "source": "大型语言模型（LLMs）",
+      "target": "自然语言处理",
+      "value": 8
+    },
+    {
+      "source": "大型语言模型",
+      "target": "数据集",
+      "value": 5
+    },
+    {
+      "source": "大型语言模型 (LLMs)",
+      "target": "自然语言处理",
+      "value": 1
+    },
+    {
+      "source": "大型语言模型（LLMs）",
+      "target": "推理能力",
+      "value": 10
+    },
+    {
+      "source": "推理能力",
+      "target": "检索增强生成（RAG）",
+      "value": 4
+    },
+    {
+      "source": "GPT-4o",
+      "target": "大型语言模型（LLMs）",
+      "value": 6
+    },
+    {
+      "source": "基准测试",
+      "target": "大型语言模型",
+      "value": 1
+    },
+    {
+      "source": "基准测试",
+      "target": "强化学习",
+      "value": 3
+    },
+    {
+      "source": "GPT-4o",
+      "target": "大型语言模型（LLM）",
+      "value": 8
+    },
+    {
+      "source": "基准测试",
+      "target": "大型语言模型（LLM）",
+      "value": 8
+    },
+    {
+      "source": "基准测试",
+      "target": "微调",
+      "value": 3
+    },
+    {
+      "source": "大型语言模型",
+      "target": "微调",
+      "value": 1
+    },
+    {
+      "source": "强化学习",
+      "target": "微调",
+      "value": 7
+    },
+    {
+      "source": "强化学习",
+      "target": "数据集",
+      "value": 1
+    },
+    {
+      "source": "微调",
+      "target": "数据集",
+      "value": 4
+    },
+    {
+      "source": "代码生成",
+      "target": "数据集",
+      "value": 5
+    },
+    {
+      "source": "大型语言模型（LLM）",
+      "target": "检索增强生成（RAG）",
+      "value": 5
+    },
+    {
+      "source": "代码生成",
+      "target": "大型语言模型 (LLMs)",
+      "value": 4
+    },
+    {
+      "source": "大型语言模型（LLM）",
+      "target": "数据集",
+      "value": 8
+    },
+    {
+      "source": "数据集",
+      "target": "检索增强生成（RAG）",
+      "value": 1
+    },
+    {
+      "source": "GPT-4",
+      "target": "大型语言模型（LLMs）",
+      "value": 6
+    },
+    {
+      "source": "GPT-4",
+      "target": "强化学习",
+      "value": 6
+    },
+    {
+      "source": "大型语言模型（LLMs）",
+      "target": "强化学习",
+      "value": 2
+    },
+    {
+      "source": "大型语言模型",
+      "target": "自然语言处理",
+      "value": 5
+    },
+    {
+      "source": "GPT-4o",
+      "target": "大型语言模型",
+      "value": 5
+    },
+    {
+      "source": "GPT-4",
+      "target": "GPT-4o",
+      "value": 9
+    },
+    {
+      "source": "GPT-4",
+      "target": "推理能力",
+      "value": 8
+    },
+    {
+      "source": "GPT-4o",
+      "target": "推理能力",
+      "value": 7
+    },
+    {
+      "source": "GPT-4o",
+      "target": "微调",
+      "value": 4
+    },
+    {
+      "source": "代码生成",
+      "target": "基准测试",
+      "value": 8
+    },
+    {
+      "source": "代码生成",
+      "target": "自然语言处理",
+      "value": 4
+    },
+    {
+      "source": "代码生成",
+      "target": "大型语言模型",
+      "value": 10
+    },
+    {
+      "source": "检索增强生成（RAG）",
+      "target": "计算开销",
+      "value": 8
+    },
+    {
+      "source": "基准测试",
+      "target": "推理能力",
+      "value": 4
+    },
+    {
+      "source": "大型语言模型",
+      "target": "推理能力",
+      "value": 6
+    },
+    {
+      "source": "推理能力",
+      "target": "数据集",
+      "value": 6
+    },
+    {
+      "source": "大型语言模型（LLM）",
+      "target": "强化学习",
+      "value": 1
+    },
+    {
+      "source": "大型语言模型（LLM）",
+      "target": "微调",
+      "value": 9
+    },
+    {
+      "source": "GPT-4o",
+      "target": "基准测试",
+      "value": 7
+    },
+    {
+      "source": "GPT-4",
+      "target": "大型语言模型",
+      "value": 7
+    },
+    {
+      "source": "基准测试",
+      "target": "检索增强生成（RAG）",
+      "value": 4
+    },
+    {
+      "source": "推理能力",
+      "target": "自然语言处理",
+      "value": 2
+    },
+    {
+      "source": "GPT-4",
+      "target": "自然语言处理",
+      "value": 7
+    }
+  ]
+}

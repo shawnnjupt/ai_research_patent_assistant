@@ -1,0 +1,107 @@
+{
+  "date": "2025-04-29",
+  "chosen": [
+    {
+      "title": "Leveraging Action Relational Structures for Integrated Learning and Planning",
+      "abstract": "Recent advances in planning have explored using learning methods to help planning. However, little attention has been given to adapting search algorithms to work better with learning systems. In this paper, we introduce partial-space search, a new search space for classical planning that leverages the relational structure of actions given by PDDL action schemas -- a structure overlooked by traditional planning approaches. Partial-space search provides a more granular view of the search space and allows earlier pruning of poor actions compared to state-space search. To guide partial-space search, we introduce action set heuristics that evaluate sets of actions in a state. We describe how to automatically convert existing heuristics into action set heuristics. We also train action set heuristics from scratch using large training datasets from partial-space search. Our new planner, LazyLifted, exploits our better integrated search and learning heuristics and outperforms the state-of-the-art ML-based heuristic on IPC 2023 learning track (LT) benchmarks. We also show the efficiency of LazyLifted on high-branching factor tasks and show that it surpasses LAMA in the combined IPC 2023 LT and high-branching factor benchmarks.",
+      "url": "https://arxiv.org/abs/2504.20318",
+      "categories": [
+        "cs.AI"
+      ],
+      "authors": "Ryan Xiao Wang,Felipe Trevizan",
+      "first_submitted_date": "2025-04-28",
+      "first_announced_date": "2025-04-29",
+      "comments": "Extended version of ICAPS 2025 paper",
+      "reason": "-"
+    },
+    {
+      "title": "TreeHop: Generate and Filter Next Query Embeddings Efficiently for Multi-hop Question Answering",
+      "abstract": "Retrieval-augmented generation (RAG) systems face significant challenges in multi-hop question answering (MHQA), where complex queries require synthesizing information across multiple document chunks. Existing approaches typically rely on iterative LLM-based query rewriting and routing, resulting in high computational costs due to repeated LLM invocations and multi-stage processes. To address these limitations, we propose TreeHop, an embedding-level framework without the need for LLMs in query refinement. TreeHop dynamically updates query embeddings by fusing semantic information from prior queries and retrieved documents, enabling iterative retrieval through embedding-space operations alone. This method replaces the traditional \"Retrieve-Rewrite-Vectorize-Retrieve\" cycle with a streamlined \"Retrieve-Embed-Retrieve\" loop, significantly reducing computational overhead. Moreover, a rule-based stop criterion is introduced to further prune redundant retrievals, balancing efficiency and recall rate. Experimental results show that TreeHop rivals advanced RAG methods across three open-domain MHQA datasets, achieving comparable performance with only 5\\%-0.4\\% of the model parameter size and reducing the query latency by approximately 99\\% compared to concurrent approaches. This makes TreeHop a faster and more cost-effective solution for deployment in a range of knowledge-intensive applications. For reproducibility purposes, codes and data are available here: https://github.com/allen-li1231/TreeHop-RAG.",
+      "url": "https://arxiv.org/abs/2504.20114",
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "authors": "Zhonghao Li,Kunpeng Zhang,Jinghuai Ou,Shuliang Liu,Xuming Hu",
+      "first_submitted_date": "2025-04-27",
+      "first_announced_date": "2025-04-29",
+      "comments": "9 pages",
+      "reason": "-"
+    },
+    {
+      "title": "Personalized Artificial General Intelligence (AGI) via Neuroscience-Inspired Continuous Learning Systems",
+      "abstract": "Artificial Intelligence has made remarkable advancements in recent years, primarily driven by increasingly large deep learning models. However, achieving true Artificial General Intelligence (AGI) demands fundamentally new architectures rather than merely scaling up existing models. Current approaches largely depend on expanding model parameters, which improves task-specific performance but falls short in enabling continuous, adaptable, and generalized learning. Achieving AGI capable of continuous learning and personalization on resource-constrained edge devices is an even bigger challenge. This paper reviews the state of continual learning and neuroscience-inspired AI, and proposes a novel architecture for Personalized AGI that integrates brain-like learning mechanisms for edge deployment. We review literature on continuous lifelong learning, catastrophic forgetting, and edge AI, and discuss key neuroscience principles of human learning, including Synaptic Pruning, Hebbian plasticity, Sparse Coding, and Dual Memory Systems, as inspirations for AI systems. Building on these insights, we outline an AI architecture that features complementary fast-and-slow learning modules, synaptic self-optimization, and memory-efficient model updates to support on-device lifelong adaptation. Conceptual diagrams of the proposed architecture and learning processes are provided. We address challenges such as catastrophic forgetting, memory efficiency, and system scalability, and present application scenarios for mobile AI assistants and embodied AI systems like humanoid robots. We conclude with key takeaways and future research directions toward truly continual, personalized AGI on the edge. While the architecture is theoretical, it synthesizes diverse findings and offers a roadmap for future implementation.",
+      "url": "https://arxiv.org/abs/2504.20109",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "authors": "Rajeev Gupta,Suhani Gupta,Ronak Parikh,Divya Gupta,Amir Javaheri,Jairaj Singh Shaktawat",
+      "first_submitted_date": "2025-04-27",
+      "first_announced_date": "2025-04-29",
+      "comments": "39 pages, 16 figures",
+      "reason": "-"
+    },
+    {
+      "title": "Learning Efficiency Meets Symmetry Breaking",
+      "abstract": "Learning-based planners leveraging Graph Neural Networks can learn search guidance applicable to large search spaces, yet their potential to address symmetries remains largely unexplored. In this paper, we introduce a graph representation of planning problems allying learning efficiency with the ability to detect symmetries, along with two pruning methods, action pruning and state pruning, designed to manage symmetries during search. The integration of these techniques into Fast Downward achieves a first-time success over LAMA on the latest IPC learning track dataset. Code is released at: https://github.com/bybeye/Distincter.",
+      "url": "https://arxiv.org/abs/2504.19738",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "authors": "Yingbin Bai,Sylvie Thiebaux,Felipe Trevizan",
+      "first_submitted_date": "2025-04-28",
+      "first_announced_date": "2025-04-29",
+      "comments": "No comments",
+      "reason": "-"
+    },
+    {
+      "title": "Hardware/Software Co-Design of RISC-V Extensions for Accelerating Sparse DNNs on FPGAs",
+      "abstract": "The customizability of RISC-V makes it an attractive choice for accelerating deep neural networks (DNNs). It can be achieved through instruction set extensions and corresponding custom functional units. Yet, efficiently exploiting these opportunities requires a hardware/software co-design approach in which the DNN model, software, and hardware are designed together. In this paper, we propose novel RISC-V extensions for accelerating DNN models containing semi-structured and unstructured sparsity. While the idea of accelerating structured and unstructured pruning is not new, our novel design offers various advantages over other designs. To exploit semi-structured sparsity, we take advantage of the fine-grained (bit-level) configurability of FPGAs and suggest reserving a few bits in a block of DNN weights to encode the information about sparsity in the succeeding blocks. The proposed custom functional unit utilizes this information to skip computations. To exploit unstructured sparsity, we propose a variable cycle sequential multiply-and-accumulate unit that performs only as many multiplications as the non-zero weights. Our implementation of unstructured and semi-structured pruning accelerators can provide speedups of up to a factor of 3 and 4, respectively. We then propose a combined design that can accelerate both types of sparsities, providing speedups of up to a factor of 5. Our designs consume a small amount of additional FPGA resources such that the resulting co-designs enable the acceleration of DNNs even on small FPGAs. We benchmark our designs on standard TinyML applications such as keyword spotting, image classification, and person detection.",
+      "url": "https://arxiv.org/abs/2504.19659",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.AR"
+      ],
+      "authors": "Muhammad Sabih,Abrarul Karim,Jakob Wittmann,Frank Hannig,Jürgen Teich",
+      "first_submitted_date": "2025-04-28",
+      "first_announced_date": "2025-04-29",
+      "comments": "No comments",
+      "reason": "-"
+    }
+  ],
+  "filtered": [
+    {
+      "title": "LODAP: On-Device Incremental Learning Via Lightweight Operations and Data Pruning",
+      "abstract": "Incremental learning that learns new classes over time after the model's deployment is becoming increasingly crucial, particularly for industrial edge systems, where it is difficult to communicate with a remote server to conduct computation-intensive learning. As more classes are expected to learn after their execution for edge devices. In this paper, we propose LODAP, a new on-device incremental learning framework for edge systems. The key part of LODAP is a new module, namely Efficient Incremental Module (EIM). EIM is composed of normal convolutions and lightweight operations. During incremental learning, EIM exploits some lightweight operations, called adapters, to effectively and efficiently learn features for new classes so that it can improve the accuracy of incremental learning while reducing model complexity as well as training overhead. The efficiency of LODAP is further enhanced by a data pruning strategy that significantly reduces the training data, thereby lowering the training overhead. We conducted extensive experiments on the CIFAR-100 and Tiny- ImageNet datasets. Experimental results show that LODAP improves the accuracy by up to 4.32\\% over existing methods while reducing around 50\\% of model complexity. In addition, evaluations on real edge systems demonstrate its applicability for on-device machine learning. The code is available at https://github.com/duanbiqing/LODAP.",
+      "url": "https://arxiv.org/abs/2504.19638",
+      "categories": [
+        "cs.LG",
+        "cs.ET"
+      ],
+      "authors": "Biqing Duan,Qing Wang,Di Liu,Wei Zhou,Zhenli He,Shengfa Miao",
+      "first_submitted_date": "2025-04-28",
+      "first_announced_date": "2025-04-29",
+      "comments": "No comments",
+      "reason": "none of cs.LG,cs.ET in whitelist"
+    },
+    {
+      "title": "Towards Faster and More Compact Foundation Models for Molecular Property Prediction",
+      "abstract": "Advancements in machine learning for molecular property prediction have improved accuracy but at the expense of higher computational cost and longer training times. Recently, the Joint Multi-domain Pre-training (JMP) foundation model has demonstrated strong performance across various downstream tasks with reduced training time over previous models. Despite JMP's advantages, fine-tuning it on molecular datasets ranging from small-scale to large-scale requires considerable time and computational resources. In this work, we investigate strategies to enhance efficiency by reducing model size while preserving performance. To better understand the model's efficiency, we analyze the layer contributions of JMP and find that later interaction blocks provide diminishing returns, suggesting an opportunity for model compression. We explore block reduction strategies by pruning the pre-trained model and evaluating its impact on efficiency and accuracy during fine-tuning. Our analysis reveals that removing two interaction blocks results in a minimal performance drop, reducing the model size by 32% while increasing inference throughput by 1.3x. These results suggest that JMP-L is over-parameterized and that a smaller, more efficient variant can achieve comparable performance with lower computational cost. Our study provides insights for developing lighter, faster, and more scalable foundation models for molecular and materials discovery. The code is publicly available at: https://github.com/Yasir-Ghunaim/efficient-jmp.",
+      "url": "https://arxiv.org/abs/2504.19538",
+      "categories": [
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "authors": "Yasir Ghunaim,Andrés Villa,Gergo Ignacz,Gyorgy Szekely,Motasem Alfarra,Bernard Ghanem",
+      "first_submitted_date": "2025-04-28",
+      "first_announced_date": "2025-04-29",
+      "comments": "No comments",
+      "reason": "none of cs.LG,q-bio.BM in whitelist"
+    }
+  ]
+}

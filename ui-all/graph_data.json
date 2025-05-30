@@ -1,0 +1,281 @@
+{
+  "nodes": [
+    {
+      "id": "量化",
+      "group": 2
+    },
+    {
+      "id": "大型语言模型（LLMs）",
+      "group": 4
+    },
+    {
+      "id": "计算开销",
+      "group": 2
+    },
+    {
+      "id": "大型语言模型",
+      "group": 1
+    },
+    {
+      "id": "计算负载均衡",
+      "group": 4
+    },
+    {
+      "id": "模型精度",
+      "group": 2
+    },
+    {
+      "id": "加速器",
+      "group": 1
+    },
+    {
+      "id": "模型压缩",
+      "group": 1
+    },
+    {
+      "id": "向量量化",
+      "group": 2
+    },
+    {
+      "id": "质量-开销权衡",
+      "group": 3
+    },
+    {
+      "id": "渐进压缩",
+      "group": 3
+    },
+    {
+      "id": "混合专家模型（MoE）",
+      "group": 2
+    },
+    {
+      "id": "剪枝",
+      "group": 4
+    },
+    {
+      "id": "比特宽度",
+      "group": 2
+    },
+    {
+      "id": "服务精度",
+      "group": 4
+    }
+  ],
+  "links": [
+    {
+      "source": "剪枝",
+      "target": "大型语言模型（LLMs）",
+      "value": 8
+    },
+    {
+      "source": "剪枝",
+      "target": "服务精度",
+      "value": 5
+    },
+    {
+      "source": "剪枝",
+      "target": "比特宽度",
+      "value": 9
+    },
+    {
+      "source": "剪枝",
+      "target": "混合专家模型（MoE）",
+      "value": 1
+    },
+    {
+      "source": "剪枝",
+      "target": "渐进压缩",
+      "value": 1
+    },
+    {
+      "source": "剪枝",
+      "target": "计算开销",
+      "value": 1
+    },
+    {
+      "source": "剪枝",
+      "target": "质量-开销权衡",
+      "value": 8
+    },
+    {
+      "source": "剪枝",
+      "target": "量化",
+      "value": 8
+    },
+    {
+      "source": "大型语言模型（LLMs）",
+      "target": "服务精度",
+      "value": 6
+    },
+    {
+      "source": "大型语言模型（LLMs）",
+      "target": "比特宽度",
+      "value": 8
+    },
+    {
+      "source": "大型语言模型（LLMs）",
+      "target": "混合专家模型（MoE）",
+      "value": 1
+    },
+    {
+      "source": "大型语言模型（LLMs）",
+      "target": "渐进压缩",
+      "value": 8
+    },
+    {
+      "source": "大型语言模型（LLMs）",
+      "target": "计算开销",
+      "value": 9
+    },
+    {
+      "source": "大型语言模型（LLMs）",
+      "target": "质量-开销权衡",
+      "value": 7
+    },
+    {
+      "source": "大型语言模型（LLMs）",
+      "target": "量化",
+      "value": 10
+    },
+    {
+      "source": "服务精度",
+      "target": "比特宽度",
+      "value": 9
+    },
+    {
+      "source": "服务精度",
+      "target": "混合专家模型（MoE）",
+      "value": 3
+    },
+    {
+      "source": "服务精度",
+      "target": "渐进压缩",
+      "value": 3
+    },
+    {
+      "source": "服务精度",
+      "target": "计算开销",
+      "value": 3
+    },
+    {
+      "source": "服务精度",
+      "target": "质量-开销权衡",
+      "value": 5
+    },
+    {
+      "source": "服务精度",
+      "target": "量化",
+      "value": 7
+    },
+    {
+      "source": "比特宽度",
+      "target": "混合专家模型（MoE）",
+      "value": 7
+    },
+    {
+      "source": "比特宽度",
+      "target": "渐进压缩",
+      "value": 4
+    },
+    {
+      "source": "比特宽度",
+      "target": "计算开销",
+      "value": 6
+    },
+    {
+      "source": "比特宽度",
+      "target": "质量-开销权衡",
+      "value": 2
+    },
+    {
+      "source": "比特宽度",
+      "target": "量化",
+      "value": 8
+    },
+    {
+      "source": "混合专家模型（MoE）",
+      "target": "渐进压缩",
+      "value": 2
+    },
+    {
+      "source": "混合专家模型（MoE）",
+      "target": "计算开销",
+      "value": 5
+    },
+    {
+      "source": "混合专家模型（MoE）",
+      "target": "质量-开销权衡",
+      "value": 8
+    },
+    {
+      "source": "混合专家模型（MoE）",
+      "target": "量化",
+      "value": 5
+    },
+    {
+      "source": "渐进压缩",
+      "target": "计算开销",
+      "value": 3
+    },
+    {
+      "source": "渐进压缩",
+      "target": "质量-开销权衡",
+      "value": 10
+    },
+    {
+      "source": "渐进压缩",
+      "target": "量化",
+      "value": 7
+    },
+    {
+      "source": "计算开销",
+      "target": "质量-开销权衡",
+      "value": 2
+    },
+    {
+      "source": "计算开销",
+      "target": "量化",
+      "value": 6
+    },
+    {
+      "source": "质量-开销权衡",
+      "target": "量化",
+      "value": 8
+    },
+    {
+      "source": "模型精度",
+      "target": "计算开销",
+      "value": 3
+    },
+    {
+      "source": "模型精度",
+      "target": "计算负载均衡",
+      "value": 5
+    },
+    {
+      "source": "计算开销",
+      "target": "计算负载均衡",
+      "value": 10
+    },
+    {
+      "source": "大型语言模型",
+      "target": "模型压缩",
+      "value": 2
+    },
+    {
+      "source": "大型语言模型",
+      "target": "计算负载均衡",
+      "value": 5
+    },
+    {
+      "source": "模型压缩",
+      "target": "计算负载均衡",
+      "value": 6
+    },
+    {
+      "source": "加速器",
+      "target": "模型精度",
+      "value": 5
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "date": "2025-04-22",
+  "chosen": [
+    {
+      "title": "Bigram Subnetworks: Mapping to Next Tokens in Transformer Language Models",
+      "abstract": "In Transformer language models, activation vectors transform from current token embeddings to next token predictions as they pass through the model. To isolate a minimal form of this transformation, we identify language model subnetworks that make bigram predictions, naive next token predictions based only on the current token. We find that bigram subnetworks can be found in fully trained language models up to 1B parameters, and these subnetworks are critical for model performance even when they consist of less than 0.2% of model parameters. Bigram subnetworks are concentrated in the first Transformer MLP layer, and they overlap significantly with subnetworks trained to optimally prune a given model. Mechanistically, the bigram subnetworks often recreate a pattern from the full models where the first layer induces a sharp change that aligns activations with next token predictions rather than current token representations. Our results demonstrate that bigram subnetworks comprise a minimal subset of parameters that are both necessary and sufficient for basic next token predictions in language models, and they help drive the transformation from current to next token activations in the residual stream. These subnetworks can lay a foundation for studying more complex language model circuits by building up from a minimal circuit.",
+      "url": "https://arxiv.org/abs/2504.15471",
+      "categories": [
+        "cs.CL"
+      ],
+      "authors": "Tyler A. Chang,Benjamin K. Bergen",
+      "first_submitted_date": "2025-04-21",
+      "first_announced_date": "2025-04-22",
+      "comments": "No comments",
+      "reason": "-"
+    },
+    {
+      "title": "D$^{2}$MoE: Dual Routing and Dynamic Scheduling for Efficient On-Device MoE-based LLM Serving",
+      "abstract": "The mixture of experts (MoE) model is a sparse variant of large language models (LLMs), designed to hold a better balance between intelligent capability and computational overhead. Despite its benefits, MoE is still too expensive to deploy on resource-constrained edge devices, especially with the demands of on-device inference services. Recent research efforts often apply model compression techniques, such as quantization, pruning and merging, to restrict MoE complexity. Unfortunately, due to their predefined static model optimization strategies, they cannot always achieve the desired quality-overhead trade-off when handling multiple requests, finally degrading the on-device quality of service. These limitations motivate us to propose the D$^2$MoE, an algorithm-system co-design framework that matches diverse task requirements by dynamically allocating the most proper bit-width to each expert. Specifically, inspired by the nested structure of matryoshka dolls, we propose the matryoshka weight quantization (MWQ) to progressively compress expert weights in a bit-nested manner and reduce the required runtime memory. On top of it, we further optimize the I/O-computation pipeline and design a heuristic scheduling algorithm following our hottest-expert-bit-first (HEBF) principle, which maximizes the expert parallelism between I/O and computation queue under constrained memory budgets, thus significantly reducing the idle temporal bubbles waiting for the experts to load. Evaluations on real edge devices show that D$^2$MoE improves the overall inference throughput by up to 1.39$\\times$ and reduces the peak memory footprint by up to 53% over the latest on-device inference frameworks, while still preserving comparable serving accuracy as its INT8 counterparts.",
+      "url": "https://arxiv.org/abs/2504.15299",
+      "categories": [
+        "cs.DC",
+        "cs.AI"
+      ],
+      "authors": "Haodong Wang,Qihua Zhou,Zicong Hong,Song Guo",
+      "first_submitted_date": "2025-04-17",
+      "first_announced_date": "2025-04-22",
+      "comments": "Accepted by MobiCom 2025",
+      "reason": "-"
+    }
+  ],
+  "filtered": [
+    {
+      "title": "Aria-MIDI: A Dataset of Piano MIDI Files for Symbolic Music Modeling",
+      "abstract": "We introduce an extensive new dataset of MIDI files, created by transcribing audio recordings of piano performances into their constituent notes. The data pipeline we use is multi-stage, employing a language model to autonomously crawl and score audio recordings from the internet based on their metadata, followed by a stage of pruning and segmentation using an audio classifier. The resulting dataset contains over one million distinct MIDI files, comprising roughly 100,000 hours of transcribed audio. We provide an in-depth analysis of our techniques, offering statistical insights, and investigate the content by extracting metadata tags, which we also provide. Dataset available at https://github.com/loubbrad/aria-midi.",
+      "url": "https://arxiv.org/abs/2504.15071",
+      "categories": [
+        "cs.SD"
+      ],
+      "authors": "Louis Bradshaw,Simon Colton",
+      "first_submitted_date": "2025-04-21",
+      "first_announced_date": "2025-04-22",
+      "comments": "ef:International Conference on Learning Representations (ICLR), 2025",
+      "reason": "none of cs.SD in whitelist"
+    }
+  ]
+}

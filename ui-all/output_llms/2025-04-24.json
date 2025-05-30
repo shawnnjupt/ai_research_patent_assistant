@@ -1,0 +1,74 @@
+{
+  "date": "2025-04-24",
+  "chosen": [
+    {
+      "title": "Range Image-Based Implicit Neural Compression for LiDAR Point Clouds",
+      "abstract": "This paper presents a novel scheme to efficiently compress Light Detection and Ranging~(LiDAR) point clouds, enabling high-precision 3D scene archives, and such archives pave the way for a detailed understanding of the corresponding 3D scenes. We focus on 2D range images~(RIs) as a lightweight format for representing 3D LiDAR observations. Although conventional image compression techniques can be adapted to improve compression efficiency for RIs, their practical performance is expected to be limited due to differences in bit precision and the distinct pixel value distribution characteristics between natural images and RIs. We propose a novel implicit neural representation~(INR)--based RI compression method that effectively handles floating-point valued pixels. The proposed method divides RIs into depth and mask images and compresses them using patch-wise and pixel-wise INR architectures with model pruning and quantization, respectively. Experiments on the KITTI dataset show that the proposed method outperforms existing image, point cloud, RI, and INR-based compression methods in terms of 3D reconstruction and detection quality at low bitrates and decoding latency.",
+      "url": "https://arxiv.org/abs/2504.17229",
+      "categories": [
+        "cs.CV"
+      ],
+      "authors": "Akihiro Kuwabara,Sorachi Kato,Takuya Fujihashi,Toshiaki Koike-Akino,Takashi Watanabe",
+      "first_submitted_date": "2025-04-23",
+      "first_announced_date": "2025-04-24",
+      "comments": "No comments",
+      "reason": "-"
+    },
+    {
+      "title": "Dynamic Superblock Pruning for Fast Learned Sparse Retrieval",
+      "abstract": "This paper proposes superblock pruning (SP) during top-k online document retrieval for learned sparse representations. SP structures the sparse index as a set of superblocks on a sequence of document blocks and conducts a superblock-level selection to decide if some superblocks can be pruned before visiting their child blocks. SP generalizes the previous flat block or cluster-based pruning, allowing the early detection of groups of documents that cannot or are less likely to appear in the final top-k list. SP can accelerate sparse retrieval in a rank-safe or approximate manner under a high-relevance competitiveness constraint. Our experiments show that the proposed scheme significantly outperforms state-of-the-art baselines on MS MARCO passages on a single-threaded CPU.",
+      "url": "https://arxiv.org/abs/2504.17045",
+      "categories": [
+        "cs.IR"
+      ],
+      "authors": "Parker Carlson,Wentai Xie,Shanxiu He,Tao Yang",
+      "first_submitted_date": "2025-04-23",
+      "first_announced_date": "2025-04-24",
+      "comments": "6 pages, 3 figures, SIGIR 25",
+      "reason": "-"
+    },
+    {
+      "title": "BackSlash: Rate Constrained Optimized Training of Large Language Models",
+      "abstract": "The rapid advancement of large-language models (LLMs) has driven extensive research into parameter compression after training has been completed, yet compression during the training phase remains largely unexplored. In this work, we introduce Rate-Constrained Training (BackSlash), a novel training-time compression approach based on rate-distortion optimization (RDO). BackSlash enables a flexible trade-off between model accuracy and complexity, significantly reducing parameter redundancy while preserving performance. Experiments in various architectures and tasks demonstrate that BackSlash can reduce memory usage by 60% - 90% without accuracy loss and provides significant compression gain compared to compression after training. Moreover, BackSlash proves to be highly versatile: it enhances generalization with small Lagrange multipliers, improves model robustness to pruning (maintaining accuracy even at 80% pruning rates), and enables network simplification for accelerated inference on edge devices.",
+      "url": "https://arxiv.org/abs/2504.16968",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "authors": "Jun Wu,Jiangtao Wen,Yuxing Han",
+      "first_submitted_date": "2025-04-23",
+      "first_announced_date": "2025-04-24",
+      "comments": "No comments",
+      "reason": "-"
+    },
+    {
+      "title": "HEMA : A Hippocampus-Inspired Extended Memory Architecture for Long-Context AI Conversations",
+      "abstract": "Large language models (LLMs) struggle with maintaining coherence in extended conversations spanning hundreds of turns, despite performing well within their context windows. This paper introduces HEMA (Hippocampus-Inspired Extended Memory Architecture), a dual-memory system inspired by human cognitive processes. HEMA combines Compact Memory - a continuously updated one-sentence summary preserving global narrative coherence, and Vector Memory - an episodic store of chunk embeddings queried via cosine similarity. When integrated with a 6B-parameter transformer, HEMA maintains coherent dialogues beyond 300 turns while keeping prompt length under 3,500 tokens. Experimental results show substantial improvements: factual recall accuracy increases from 41% to 87%, and human-rated coherence improves from 2.7 to 4.3 on a 5-point scale. With 10K indexed chunks, Vector Memory achieves P@5 >= 0.80 and R@50 >= 0.74, doubling the area under the precision-recall curve compared to summarization-only approaches. Ablation studies reveal two key insights: semantic forgetting through age-weighted pruning reduces retrieval latency by 34% with minimal recall loss, and a two-level summary hierarchy prevents cascade errors in ultra-long conversations exceeding 1,000 turns. HEMA demonstrates that combining verbatim recall with semantic continuity provides a practical solution for privacy-aware conversational AI capable of month-long dialogues without model retraining.",
+      "url": "https://arxiv.org/abs/2504.16754",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "authors": "Kwangseob Ahn",
+      "first_submitted_date": "2025-04-23",
+      "first_announced_date": "2025-04-24",
+      "comments": "No comments",
+      "reason": "-"
+    }
+  ],
+  "filtered": [
+    {
+      "title": "Rethinking Vision Transformer for Large-Scale Fine-Grained Image Retrieval",
+      "abstract": "Large-scale fine-grained image retrieval (FGIR) aims to retrieve images belonging to the same subcategory as a given query by capturing subtle differences in a large-scale setting. Recently, Vision Transformers (ViT) have been employed in FGIR due to their powerful self-attention mechanism for modeling long-range dependencies. However, most Transformer-based methods focus primarily on leveraging self-attention to distinguish fine-grained details, while overlooking the high computational complexity and redundant dependencies inherent to these models, limiting their scalability and effectiveness in large-scale FGIR. In this paper, we propose an Efficient and Effective ViT-based framework, termed \\textbf{EET}, which integrates token pruning module with a discriminative transfer strategy to address these limitations. Specifically, we introduce a content-based token pruning scheme to enhance the efficiency of the vanilla ViT, progressively removing background or low-discriminative tokens at different stages by exploiting feature responses and self-attention mechanism. To ensure the resulting efficient ViT retains strong discriminative power, we further present a discriminative transfer strategy comprising both \\textit{discriminative knowledge transfer} and \\textit{discriminative region guidance}. Using a distillation paradigm, these components transfer knowledge from a larger ``teacher'' ViT to a more efficient ``student'' model, guiding the latter to focus on subtle yet crucial regions in a cost-free manner. Extensive experiments on two widely-used fine-grained datasets and four large-scale fine-grained datasets demonstrate the effectiveness of our method. Specifically, EET reduces the inference latency of ViT-Small by 42.7\\% and boosts the retrieval performance of 16-bit hash codes by 5.15\\% on the challenging NABirds dataset.",
+      "url": "https://arxiv.org/abs/2504.16691",
+      "categories": [
+        "cs.MM"
+      ],
+      "authors": "Xin Jiang,Hao Tang,Yonghua Pan,Zechao Li",
+      "first_submitted_date": "2025-04-23",
+      "first_announced_date": "2025-04-24",
+      "comments": "Accepted by IEEE TMM",
+      "reason": "none of cs.MM in whitelist"
+    }
+  ]
+}
